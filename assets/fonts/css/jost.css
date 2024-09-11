@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('fonts/Jost/Jost-Regular.woff2') format('woff2'),
+         url('fonts/Jost/Jost-Regular.woff') format('woff'),
+         url('fonts/Jost/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Жирный стиль */
+@font-face {
+    font-family: 'Jost';
+    src: url('fonts/Jost/Jost-Bold.woff2') format('woff2'),
+         url('fonts/Jost/Jost-Bold.woff') format('woff'),
+         url('fonts/Jost/Jost-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Курсив */
+@font-face {
+    font-family: 'Jost';
+    src: url('fonts/Jost/Jost-Italic.woff2') format('woff2'),
+         url('fonts/Jost/Jost-Italic.woff') format('woff'),
+         url('fonts/Jost/Jost-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Жирный курсив */
+@font-face {
+    font-family: 'Jost';
+    src: url('fonts/Jost/Jost-BoldItalic.woff2') format('woff2'),
+         url('fonts/Jost/Jost-BoldItalic.woff') format('woff'),
+         url('fonts/Jost/Jost-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

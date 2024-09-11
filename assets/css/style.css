@@ -1,0 +1,155 @@
+.text-w16 {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(0.625rem, 0.538rem + 0.385vw, 1rem);
+    line-height: clamp(0.625rem, 0.438rem + 0.833vw, 1.438rem);
+    text-transform: uppercase;
+}
+
+.header {
+}
+
+.conteiner {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.conteiner__header {
+    display: flex;
+    justify-content: space-between;
+    
+    background: #F8F8F8;
+    
+    max-width: inherit;
+    max-height: 79px;
+}
+
+.conteiner__inner--header {
+    display: flex;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    max-width: inherit;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    max-width: 171px;
+    max-height: 59px;
+}
+.logo__iner {
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: inherit;
+}
+
+.nav__header {
+    margin-left: 4vw;
+    margin-top: 15px;
+    margin-bottom: 11px;
+}
+
+.nav__bar {
+    display: flex;
+
+    gap: 10px;
+}
+
+.nav__bar--second {
+    display: flex;
+    justify-content: right;
+
+    /* margin-left: 20vw;  */
+    margin-left: 3vw; 
+}
+
+.nav__bar--item {
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+
+    background-color: #FFFFFF;
+
+    padding: 15px 15px 15px 15px;
+}
+
+.nav__item--catalog {
+    background-color: #00B0E1;
+    color: #FFFFFF;
+}
+.catalog__icon {
+    margin-right: 10px;
+
+    max-width: 20px;
+    max-height: 16px;
+}
+.nav__item--link {
+    display: flex;
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.nav__serch {
+    width: 14.5vw;
+}
+
+.nav__serch::placeholder {
+    text-transform: uppercase;
+}
+
+.input__icon {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.input__icon:hover {
+    cursor: pointer;
+}
+
+.cart {
+    max-width: 50px;
+    max-height: 50px;
+}
+.cart__icon {
+    max-width: 24px;
+    max-height: 24px;
+}
+.personalAccount {
+    max-width: 50px;
+    max-height: 50px;
+}
+.personalAccount__icon {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.bar__item--phone {
+    background-color: #00B0E1;
+    color: #FFFFFF;
+}
+.phoneNumber__link {
+    display: flex;
+    align-items: center;
+}
+.phoneNumber__icon {
+    max-width: 24px;
+    max-height: 24px;
+
+    margin-left: 17px;
+}
