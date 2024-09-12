@@ -22,7 +22,6 @@
     
     background: #F8F8F8;
     
-    max-width: inherit;
     max-height: 79px;
 }
 
@@ -72,8 +71,7 @@
     display: flex;
     justify-content: right;
 
-    /* margin-left: 20vw;  */
-    margin-left: 3vw; 
+    margin-left: 6vw; 
 }
 
 .nav__bar--item {
@@ -140,13 +138,28 @@
 }
 
 .bar__item--phone {
+    display: block;
+
+    align-self: center;
+
+    width: 10.56vw;
+
     background-color: #00B0E1;
     color: #FFFFFF;
+
+    line-height: clamp(0.625rem, 0.388rem + 1.188vw, 1.813rem);
+    font-size: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem)
 }
 .phoneNumber__link {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
+
+.phoneNumber {
+   
+}
+
 .phoneNumber__icon {
     max-width: 24px;
     max-height: 24px;
