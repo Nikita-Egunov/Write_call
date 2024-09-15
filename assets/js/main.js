@@ -1,8 +1,4 @@
-import Swiper from "swiper";
-
-import { Pagination, Navigation } from "swiper/modules";
-
-var firstSwiper = new Swiper(".mySwiper", {
+var firstSwiper = new Swiper(".firstSwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -12,6 +8,7 @@ var firstSwiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
       },
   });
+
 
 function performSearch() {
     const searchQuery = document.getElementById('search-input').value;

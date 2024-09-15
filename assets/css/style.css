@@ -1,3 +1,22 @@
+.title-w120 {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.625rem, -0.854rem + 6.962vw, 7.5rem);
+    line-height: 130%;
+}
+
+.text-w20 {
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: clamp(0.625rem, 0.491rem + 0.633vw, 1.25rem);
+line-height: 150%;
+
+}
+
+
 .text-w16 {
     font-family: 'Jost';
     font-style: normal;
@@ -165,4 +184,91 @@
     max-height: 24px;
 
     margin-left: 17px;
+}
+
+.main {
+}
+.swiper {
+}
+.firstSwiper {
+    margin-top: 10px;
+
+    max-width: 1840px;
+    max-height: 657px;
+
+    position: relative;
+}
+.swiper-wrapper {
+    max-width: inherit;
+    max-height: inherit;
+}
+.swiper-slide {
+    border-radius: 10px;
+
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.first__slide {
+    background: linear-gradient(to bottom, #374D7B, #00B0E1);
+}
+
+.firstSlide__conteiner {
+    display: flex;
+}
+
+.firstSlide__conteiner--inner {
+    margin: 127px 58px 144px 158px;
+}
+
+.swiper-pagination {
+    min-width: 10px;
+
+    margin-bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+    border-radius: 2px;
+
+    width: 40px;
+    height: 5px;
+
+    background-color: #404040;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FFFFFF;
+}
+
+.swiper-button-next {
+}
+.swiper-button-prev {
+}
+
+.title__swiper--first {
+    margin-bottom: 17px;
+
+    color: #FFFFFF;
+}
+
+.text__slider--first {
+    margin-bottom: 53px;
+
+    color: #FFFFFF;
+}
+
+.ButtonLink {
+    max-width: 300px;
+    max-height: 70px;
+
+    border-radius: 10px;
+
+    padding: 23.5px 70.5px 23.5px 70.5px;
+    margin: 23.5px 0px 23.5px 0px;
+
+    background-color: #FFFFFF;
+    color: #374D7B;
+}
+.swiper__img {
+    z-index: -1;
 }

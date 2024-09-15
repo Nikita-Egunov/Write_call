@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Write_call</title>
     <link rel="stylesheet" href="./assets/fonts/css/jost.css">
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -15,56 +15,83 @@
     <header class="header">
         <div class="conteiner conteiner__header">
             <div class="conteiner__inner conteiner__inner--header">
-            <a href="#" class="logo">
-                <img src="./assets/imges/logo.svg" alt="logo" class="logo__iner"></img>
-            </a>
-            <nav class="nav nav__header">
-                <ul class="nav__bar text-w16">
-                    <li class="nav__bar--item nav__item--catalog"><a href="#" class="nav__item--link">
-                        <img src="./assets/imges/catalog_icon.svg" class="catalog__icon">
-                        <p class="link__text">каталог</p></a></li>
-                    <li class="nav__bar--item"><a href="#" class="nav__item--link">Акции</a></li>
-                    <li class="nav__bar--item"><a href="#" class="nav__item--link">О магазине</a></li>
-                    <li class="nav__bar--item"><a href="#" class="nav__item--link">оплата и доставка</a></li>
-                    <li class="nav__bar--item"><a href="#" class="nav__item--link">Контакты</a></li>
-                </ul>
-                <ul class="nav__bar nav__bar--second">
-                    <li class="nav__bar--item"><input type="search" id="search-input" class="nav__serch"
-                            placeholder="Поиск техники"><img src="./assets/imges/search_icon.svg" alt="search_icon"
-                            onclick="performSearch()" class="input__icon"></li>
-                    <li class="nav__bar--item"><a href="#" class="cart"><img src="./assets/imges/cart_logo.svg"
-                                alt="" class="cart__icon"></a></li>
-                    <li class="nav__bar--item"><a href="#" class="personalAccount"><img
-                                src="./assets/imges/personalAccaunt_icon.svg" class="personalAccount__icon"></a></li>
-                    <li class="nav__bar--item bar__item--phone"><a href="#" class="phoneNumber__link">
-                            <p class="phoneNumber">+7 (985) 200 77 20</p> 
-                            <img src="./assets/imges/phone_icon.svg" alt="search_icon"  class="phoneNumber__icon">
-                        </a></li>
-                </ul>
-            </nav>
-        </div>
+                <a href="#" class="logo">
+                    <img src="./assets/imges/logo.svg" alt="logo" class="logo__iner"></img>
+                </a>
+                <nav class="nav nav__header">
+                    <ul class="nav__bar text-w16">
+                        <li class="nav__bar--item nav__item--catalog"><a href="#" class="nav__item--link">
+                                <img src="./assets/imges/catalog_icon.svg" class="catalog__icon">
+                                <p class="link__text">каталог</p>
+                            </a></li>
+                        <li class="nav__bar--item"><a href="#" class="nav__item--link">Акции</a></li>
+                        <li class="nav__bar--item"><a href="#" class="nav__item--link">О магазине</a></li>
+                        <li class="nav__bar--item"><a href="#" class="nav__item--link">оплата и доставка</a></li>
+                        <li class="nav__bar--item"><a href="#" class="nav__item--link">Контакты</a></li>
+                    </ul>
+                    <ul class="nav__bar nav__bar--second">
+                        <li class="nav__bar--item"><input type="search" id="search-input" class="nav__serch"
+                                placeholder="Поиск техники"><img src="./assets/imges/search_icon.svg" alt="search_icon"
+                                onclick="performSearch()" class="input__icon"></li>
+                        <li class="nav__bar--item"><a href="#" class="cart"><img src="./assets/imges/cart_logo.svg"
+                                    alt="" class="cart__icon"></a></li>
+                        <li class="nav__bar--item"><a href="#" class="personalAccount"><img
+                                    src="./assets/imges/personalAccaunt_icon.svg" class="personalAccount__icon"></a>
+                        </li>
+                        <li class="nav__bar--item bar__item--phone"><a href="#" class="phoneNumber__link">
+                                <p class="phoneNumber">+7 (985) 200 77 20</p>
+                                <img src="./assets/imges/phone_icon.svg" alt="search_icon" class="phoneNumber__icon">
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-<main class="main">
-    <div class="swiper mySwiper"></div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
+    <main class="main">
+        <div class="conteiner">
+            <div class="swiper firstSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide first__slide">
+                        <div class="firstSlide__conteiner">
+                            <div class="firstSlide__conteiner--inner">
+                                <h2 class="title__swiper--first title-w120">Apple Watch</h2>
+                                <p class="text-w20 text__slider--first">Поднимите свой личный технологический
+                                    уровень<br>
+                                    на ступеньку выше с элегантными часами Apple<br>
+                                    Watch Series 9 45 мм GPS</p>
+                                <a href="#" class="ButtonLink text-w16">Смотреть каталог</a>
+                            </div>
+                            <img src="./assets/imges/Apple_watch.svg" alt="Apple watch swg" class="swiper__img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <!-- <div class="swiper-slide">
+                        <h2 class="title__swiper title-w120">Apple Watch</h2>
+                        <p class="text-w20 text__slider">Поднимите свой личный технологический уровень<br>
+                            на ступеньку выше с элегантными часами Apple<br>
+                            Watch Series 9 45 мм GPS</p>
+                        <a href="#" class="ButtonLink">Смотреть каталог</a>
+                        <img src="./assets/imges/Apple_watch.svg" alt="Apple watch swg" class="swiper__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="title__slider title-w120">Apple Watch</h2>
+                        <p class="text-w20 text__slider">Поднимите свой личный технологический уровень<br>
+                            на ступеньку выше с элегантными часами Apple<br>
+                            Watch Series 9 45 мм GPS</p>
+                        <a href="#" class="ButtonLink"></a>
+                        <img src="./assets/imges/Apple_watch.svg" alt="Apple watch swg" class="swiper__img">
+                    </div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-</main>
-<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-<script  src="./assets/js/main.js"></script>
+    </main>
+    <script defer src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/main.js"></script>
 </body>
 
 </html>
