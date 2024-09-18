@@ -1,38 +1,143 @@
+/* Jost-Black */
 @font-face {
     font-family: 'Jost';
-    src: url('fonts/Jost/Jost-Regular.woff2') format('woff2'),
-         url('fonts/Jost/Jost-Regular.woff') format('woff'),
-         url('fonts/Jost/Jost-Regular.ttf') format('truetype');
-    font-weight: normal;
+    src: url('../jost/static/Jost-Black.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
 }
 
-/* Жирный стиль */
+/* Jost-BlackItalic */
 @font-face {
     font-family: 'Jost';
-    src: url('fonts/Jost/Jost-Bold.woff2') format('woff2'),
-         url('fonts/Jost/Jost-Bold.woff') format('woff'),
-         url('fonts/Jost/Jost-Bold.ttf') format('truetype');
+    src: url('../jost/static/Jost-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Jost-Bold */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
-/* Курсив */
+/* Jost-BoldItalic */
 @font-face {
     font-family: 'Jost';
-    src: url('fonts/Jost/Jost-Italic.woff2') format('woff2'),
-         url('fonts/Jost/Jost-Italic.woff') format('woff'),
-         url('fonts/Jost/Jost-Italic.ttf') format('truetype');
+    src: url('../jost/static/Jost-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Jost-ExtraBold */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Jost-ExtraBoldItalic */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Jost-ExtraLight */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Jost-ExtraLightItalic */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Jost-Italic */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
-/* Жирный курсив */
+/* Jost-Light */
 @font-face {
     font-family: 'Jost';
-    src: url('fonts/Jost/Jost-BoldItalic.woff2') format('woff2'),
-         url('fonts/Jost/Jost-BoldItalic.woff') format('woff'),
-         url('fonts/Jost/Jost-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
+    src: url('../jost/static/Jost-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Jost-LightItalic */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Jost-Medium */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Jost-MediumItalic */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Jost-Regular */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Jost-SemiBold */
+@font-face {
+    font-family: 'Jost_SemiBold';
+    src: url('../jost/static/Jost-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Jost-SemiBoldItalic */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Jost-Thin */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Jost-ThinItalic */
+@font-face {
+    font-family: 'Jost';
+    src: url('../jost/static/Jost-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
     font-style: italic;
 }

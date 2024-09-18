@@ -25,3 +25,22 @@
     background-color: #ff6347; /* Меняем цвет активного элемента */
     transform: scale(1.5); /* Увеличиваем активный элемент */
 }
+
+.aboutUs__list {
+    list-style-image: url(../imges/aboutUs__item-marker.svg);
+}
+
+.aboutUs__item::marker {
+}
+
+.aboutUs__item {
+    /* color: #000; */
+    color: #FFFFFF;
+}
+
+.conteiner {
+    max-width: 100px;
+
+    display: flex;
+    flex-direction: column;
+}
