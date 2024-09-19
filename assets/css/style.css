@@ -379,7 +379,6 @@ section {
     margin-top: 49px;
 
     max-width: 1839px;
-    max-height: 409px;
 
     border-radius: 10px;
     background: linear-gradient(to right, #00B0E1, #374D7B);
@@ -942,6 +941,33 @@ section {
     height: 100%;
 }
 
+/*  */
+
 footer {
     margin-top: 100px;
+}
+
+.conteiner__inner--footer {
+    display: flex;
+    justify-content: space-around;
+}
+.conteiner-inner__footer--inner {
+}
+
+.conteiner-footer--inner {
+}
+.conteiner-footer--inner__text {
+}
+
+.footer__title {
+}
+.link__conteiner {
+    display: flex;
+    flex-direction: column;
+}
+.footer__link {
+}
+.link__conteiner--inner {
+}
+.call__back {
 }
