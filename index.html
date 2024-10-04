@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Write_call</title>
     <link rel="stylesheet" href="./assets/fonts/css/jost.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -14,37 +15,209 @@
 <body>
     <header class="header">
         <div class="conteiner conteiner__header">
-            <div class="conteiner__inner conteiner__inner--header">
-                <a href="#" class="logo">
-                    <img src="./assets/imges/logo.svg" alt="logo" class="logo__iner">
-                </a>
-                <nav class="nav nav__header">
-                    <ul class="nav__bar text-w16">
-                        <li class="nav__bar--item nav__item--catalog"><a href="#" class="nav__item--link">
-                                <img src="./assets/imges/catalog_icon.svg" class="catalog__icon">
-                                <p class="link__text">каталог</p>
-                            </a></li>
-                        <li class="nav__bar--item"><a href="#" class="nav__item--link">Акции</a></li>
-                        <li class="nav__bar--item"><a href="#" class="nav__item--link">О магазине</a></li>
-                        <li class="nav__bar--item"><a href="#" class="nav__item--link">оплата и доставка</a></li>
-                        <li class="nav__bar--item"><a href="#" class="nav__item--link">Контакты</a></li>
-                    </ul>
-                    <ul class="nav__bar nav__bar--second">
-                        <li class="nav__bar--item"><input type="search" id="search-input" class="nav__serch"
-                                placeholder="Поиск техники"><img src="./assets/imges/search_icon.svg" alt="search_icon"
-                                onclick="performSearch()" class="input__icon"></li>
-                        <li class="nav__bar--item"><a href="#" class="cart"><img src="./assets/imges/cart_logo.svg"
-                                    alt="" class="cart__icon"></a></li>
-                        <li class="nav__bar--item"><a href="#" class="personalAccount"><img
-                                    src="./assets/imges/personalAccaunt_icon.svg" class="personalAccount__icon"></a>
-                        </li>
-                        <li class="nav__bar--item bar__item--phone"><a href="#" class="phoneNumber__link">
-                                <p class="phoneNumber">+7 (985) 200 77 20</p>
-                                <img src="./assets/imges/phone_icon.svg" alt="search_icon" class="phoneNumber__icon">
-                            </a></li>
-                    </ul>
-                </nav>
+            <a href="#" class="logo">
+                <img src="./assets/imges/logo.svg" alt="logo" class="logo__iner">
+            </a>
+            <nav class="nav nav__header ">
+                <ul class="nav__list text-w16">
+                    <li id="open-catalog-modal-btn" class=" nav__item active nav__item--catalog nav__item--no-search">
+                        <button class="nav__item--link">каталог</button>
+                    </li>
+                    <li class="nav__item nav__item--no-search "><a href="#" class="nav__item--link">Акции</a></li>
+                    <li class="nav__item nav__item--no-search "><a href="#" class="nav__item--link">О магазине</a></li>
+                    <li class="nav__item nav__item--no-search "><a href="#" class="nav__item--link">оплата и доставка</a>
+                    </li>
+                    <li class="nav__item nav__item--no-search"><a href="#" class="nav__item--link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div id="catalog-modal" class="catalog-modal__conteiner">
+                <button id="close-catalog-btn" class="cross-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L2 22M2 2L22 22" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="conteiner__inner conteiner__inner--modal-catalog">
+                    <nav class="nav__conteiner">
+                        <ul class="catalog__list text-w20">
+                            <li class="catalog__item"  id="links-open-btn-1"><button
+                                    class="catalog__btn">Apple <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
+                                    </svg></button></li>
+                            <li class="catalog__item" id="links-open-btn-2"  ><button 
+                                    class="catalog__btn">Insta360 <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
+                                    </svg></button></li>
+                            <li class="catalog__item"  id="links-open-btn-3" ><button
+                                    class="catalog__btn">GoPro <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
+                                    </svg></button></li>
+                            <li class="catalog__item"  id="links-open-btn-4" ><button
+                                    class="catalog__btn">DJI <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
+                                    </svg></button></li>
+                            <li class="catalog__item" id="links-open-btn-5" ><button 
+                                    class="catalog__btn">Dyson <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
+                                    </svg></button></li>
+                            <li class="catalog__item" id="links-open-btn-6" ><button 
+                                    class="catalog__btn">Garmin <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
+                                    </svg></button></li>
+                            <li class="catalog__item" id="links-open-btn-7"><button 
+                                    class="catalog__btn">Pgytech <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
+                                    </svg></button></li>
+                            <li class="catalog__item" id="links-open-btn-8" ><button 
+                                    class="catalog__btn">Флэшнакопители
+                                     и карты памяти <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
+                                    </svg></button></li>
+                            <li class="catalog__item" id="links-open-btn-9" ><button 
+                                    class="catalog__btn">Кофемашины <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
+                                    </svg></button></li>
+                            <li class="catalog__item"  id="links-open-btn-10" ><button
+                                    class="catalog__btn">HDD, SSD, M2 <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
+                                    </svg></button></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav__conteiner nav__conteiner--second text-w16">
+                        <ul id="catalog__list-1" class="catalog__list catalog__list--links">
+                            <li class="catalog__item catalog__item--links">Фен-стайлер1</li>
+                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                            <li class="catalog__item catalog__item--links">Пылесосы</li>
+                            <li class="catalog__item catalog__item--links">Аксессуары</li>
+                        </ul>
+                        <ul id="catalog__list-2" class="catalog__list catalog__list--links">
+                            <li class="catalog__item catalog__item--links">Фен-стайлер2</li>
+                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                            <li class="catalog__item catalog__item--links">Пылесосы</li>
+                            <li class="catalog__item catalog__item--links">Аксессуары</li>
+                        </ul>
+                        <ul id="catalog__list-3" class="catalog__list catalog__list--links">
+                            <li class="catalog__item catalog__item--links">Фен-стайлер3</li>
+                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                            <li class="catalog__item catalog__item--links">Пылесосы</li>
+                            <li class="catalog__item catalog__item--links">Аксессуары</li>
+                        </ul>
+                        <ul id="catalog__list-4" class="catalog__list catalog__list--links">
+                            <li class="catalog__item catalog__item--links">Фен-стайлер4</li>
+                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                            <li class="catalog__item catalog__item--links">Пылесосы</li>
+                            <li class="catalog__item catalog__item--links">Аксессуары</li>
+                        </ul>
+                        <ul id="catalog__list-5" class="catalog__list catalog__list--links">
+                            <li class="catalog__item catalog__item--links">Фен-стайлер</li>
+                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                            <li class="catalog__item catalog__item--links">Пылесосы</li>
+                            <li class="catalog__item catalog__item--links">Аксессуары</li>
+                        </ul>
+                        <ul id="catalog__list-6" class="catalog__list catalog__list--links">
+                            <li class="catalog__item catalog__item--links">Фен-стайлер6</li>
+                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                            <li class="catalog__item catalog__item--links">Пылесосы</li>
+                            <li class="catalog__item catalog__item--links">Аксессуары</li>
+                        </ul>
+                        <ul id="catalog__list-7" class="catalog__list catalog__list--links">
+                            <li class="catalog__item catalog__item--links">Фен-стайлер7</li>
+                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                            <li class="catalog__item catalog__item--links">Пылесосы</li>
+                            <li class="catalog__item catalog__item--links">Аксессуары</li>
+                        </ul>
+                        <ul id="catalog__list-8" class="catalog__list catalog__list--links">
+                            <li class="catalog__item catalog__item--links">Фен-стайлер8</li>
+                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                            <li class="catalog__item catalog__item--links">Пылесосы</li>
+                            <li class="catalog__item catalog__item--links">Аксессуары</li>
+                        </ul>
+                        <ul id="catalog__list-9" class="catalog__list catalog__list--links">
+                            <li class="catalog__item catalog__item--links">Фен-стайлер9</li>
+                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                            <li class="catalog__item catalog__item--links">Пылесосы</li>
+                            <li class="catalog__item catalog__item--links">Аксессуары</li>
+                        </ul>
+                        <ul id="catalog__list-10" class="catalog__list catalog__list--links">
+                            <li class="catalog__item catalog__item--links">Фен-стайлер10</li>
+                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                            <li class="catalog__item catalog__item--links">Пылесосы</li>
+                            <li class="catalog__item catalog__item--links">Аксессуары</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+            <nav class="nav nav__header ">
+                <ul class="nav__list ">
+                    <li class="nav__item "><input type="search" id="search-input" class="nav__serch text-w16"
+                            placeholder="Поиск техники">
+                        <svg class="input__icon" id="search" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4_1481)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.5 2C9.1446 2.00012 7.80887 2.32436 6.60427 2.94569C5.39966 3.56702 4.3611 4.46742 3.57525 5.57175C2.78939 6.67609 2.27902 7.95235 2.08672 9.29404C1.89442 10.6357 2.02576 12.004 2.46979 13.2846C2.91382 14.5652 3.65766 15.7211 4.63925 16.6557C5.62084 17.5904 6.81171 18.2768 8.11252 18.6576C9.41333 19.0384 10.7864 19.1026 12.117 18.8449C13.4477 18.5872 14.6975 18.015 15.762 17.176L19.414 20.828C19.6026 21.0102 19.8552 21.111 20.1174 21.1087C20.3796 21.1064 20.6304 21.0012 20.8158 20.8158C21.0012 20.6304 21.1064 20.3796 21.1087 20.1174C21.111 19.8552 21.0102 19.6026 20.828 19.414L17.176 15.762C18.164 14.5086 18.7792 13.0024 18.9511 11.4157C19.123 9.82905 18.8448 8.22602 18.1482 6.79009C17.4517 5.35417 16.3649 4.14336 15.0123 3.29623C13.6597 2.44911 12.096 1.99989 10.5 2ZM4.00001 10.5C4.00001 8.77609 4.68483 7.12279 5.90382 5.90381C7.1228 4.68482 8.7761 4 10.5 4C12.2239 4 13.8772 4.68482 15.0962 5.90381C16.3152 7.12279 17 8.77609 17 10.5C17 12.2239 16.3152 13.8772 15.0962 15.0962C13.8772 16.3152 12.2239 17 10.5 17C8.7761 17 7.1228 16.3152 5.90382 15.0962C4.68483 13.8772 4.00001 12.2239 4.00001 10.5Z"
+                                    fill="#374D7B" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4_1481">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </li>
+                    <li class="nav__item  nav__item--no-search"><a href="#" class="cart">
+                            <svg class="cart__icon" id="search__button" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6_25)">
+                                    <path
+                                        d="M22.2433 2.18184H4.36362C4.30978 2.18184 4.26063 2.20209 4.21016 2.21727L3.7707 0.773131C3.70262 0.549439 3.56445 0.353546 3.37658 0.214344C3.18871 0.0751416 2.96108 -5.0609e-07 2.72726 0L0.545472 0C0.244227 0 0 0.244227 0 0.545472V1.63636C0 1.93761 0.244227 2.18184 0.545472 2.18184H1.91925L5.32729 13.3812L4.05445 14.8662C3.55137 15.4531 3.32484 16.2617 3.55638 16.9992C3.85251 17.9424 4.68496 18.5454 5.64474 18.5454H21.2727C21.574 18.5454 21.8182 18.3012 21.8182 18V16.9091C21.8182 16.6078 21.574 16.3636 21.2727 16.3636H5.64469L7.37377 14.3464C7.41723 14.2956 7.44919 14.2384 7.48218 14.1818H18.0522C18.4664 14.1818 18.872 14.0639 19.2217 13.842C19.5713 13.6201 19.8507 13.3033 20.027 12.9286L23.8333 4.84032C23.9427 4.60633 23.9996 4.35125 24 4.09296V3.93847C24 2.96837 23.2135 2.18184 22.2433 2.18184Z"
+                                        fill="#374D7B" />
+                                    <path
+                                        d="M6.54548 24.0001C7.75048 24.0001 8.72732 23.0233 8.72732 21.8183C8.72732 20.6133 7.75048 19.6365 6.54548 19.6365C5.34049 19.6365 4.36365 20.6133 4.36365 21.8183C4.36365 23.0233 5.34049 24.0001 6.54548 24.0001Z"
+                                        fill="#374D7B" />
+                                    <path
+                                        d="M19.6364 24.0001C20.8414 24.0001 21.8182 23.0233 21.8182 21.8183C21.8182 20.6133 20.8414 19.6365 19.6364 19.6365C18.4314 19.6365 17.4545 20.6133 17.4545 21.8183C17.4545 23.0233 18.4314 24.0001 19.6364 24.0001Z"
+                                        fill="#374D7B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6_25">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__item  nav__item--no-search"><a href="#" class="personalAccount"><svg
+                                class="personalAccount__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0C8.51067 0 5.67188 2.8388 5.67188 6.32812C5.67188 9.81745 8.51067 12.6562 12 12.6562C15.4893 12.6562 18.3281 9.81745 18.3281 6.32812C18.3281 2.8388 15.4893 0 12 0ZM19.8734 16.7904C18.1409 15.0313 15.8442 14.0625 13.4062 14.0625H10.5938C8.15588 14.0625 5.85909 15.0313 4.12659 16.7904C2.40258 18.5409 1.45312 20.8515 1.45312 23.2969C1.45312 23.6852 1.76794 24 2.15625 24H21.8438C22.2321 24 22.5469 23.6852 22.5469 23.2969C22.5469 20.8515 21.5974 18.5409 19.8734 16.7904Z"
+                                    fill="#374D7B" />
+                            </svg>
+                        </a>
+                    </li>
+                    <button id="open-modal-btn" class="phoneNumber__btn text-w20">+7 (985) 200 77 20</button>
+                </ul>                    
+                <div class="modal" id="my-modal">
+                    <div class="modal__box first__modal">
+                        <button class="modal__close-btn modal-close-btn__first" id="close-my-modal-btn"></button>
+                        <div class="first-modal__conteiner">
+                            <h2 class="modal__title text-w36">Обратный звонок</h2>
+                            <p class="modal__text text-w20">Заполните форму и мы свяжемся с Вами<br>
+                                в ближайшее время</p>
+                            <form action="" class="modal__conteiner">
+                                <div class="modal-conteiner__inner text-w16">
+                                    <input type="text" class="modal__input" placeholder="Ваше имя">
+                                    <input type="tel" class="modal__input" placeholder="Ваш номер телефона">
+                                </div>
+                                <button type="submit" class="modal__sabmit text-w16">оставить заявку</button>
+                            </form>
+                            <p class="modal-text__mini text-w16">Нажимая на кнопку, Вы соглашаетесь
+                                с условиями Политики конфиденциальности</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <main class="main">
@@ -107,9 +280,8 @@
             <div class="conteiner">
                 <h2 class="title-w60 title">Каталог</h2>
                 <div class="swiper secondSwiper">
-                    <!-- Additional required wrapper -->
+
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
                         <div class="swiper-slide secondSlider__conteiner">
                             <div class="productConteiner productConteiner--apple">
                                 <img src="./assets/imges/apple_watch2.svg" alt="product img" class="product__img">
@@ -148,7 +320,6 @@
                         <div class="swiper-slide">Slide 2</div>
                         <div class="swiper-slide">Slide 3</div>
                     </div>
-                    <!-- If we need pagination -->
                     <div class="swiper-pagination swiper-pagination-second"></div>
                 </div>
             </div>
@@ -269,9 +440,7 @@
             <div class="conteiner">
                 <h2 class="title title-w60">Ваше мнение о нас</h2>
                 <div class="swiper thirdSwiper">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
                         <div class="swiper-slide feedback__conteiner">
                             <div class="feedback__conteiner--inner">
                                 <p class="data text-w16">01.07.24</p>
@@ -372,7 +541,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- If we need pagination -->
                     <div class="swiper-pagination swiper-pagination-second"></div>
                 </div>
             </div>
@@ -415,7 +583,38 @@
                                     <span class="Call__write">Свяжитесь с нами</span>
                                 </h3>
                             </div>
-                            <a href="#" class="conect-with-us-conteiner__button text-w16">Связаться</a>
+                            <button class="conect-with-us-conteiner__button text-w16"
+                                id="open-second-modal-btn">Связаться</button>
+                            <div class="modal" id="second-modal">
+                                <div class="modal__box">
+                                    <div class="modal__box first__modal">
+                                        <button class="modal__close-btn modal-close-btn__first"
+                                            id="close-second-modal-btn"></button>
+                                        <div class="first-modal__conteiner">
+                                            <h2 class="modal__title text-w36">Обратный звонок</h2>
+                                            <p class="modal__text text-w20">Заполните форму и мы свяжемся с Вами<br>
+                                                в ближайшее время</p>
+                                            <form action="" class="modal__conteiner">
+                                                <div class="modal-conteiner__inner text-w16">
+                                                    <input type="text" class="modal__input" placeholder="Ваше имя">
+                                                    <input type="tel" class="modal__input"
+                                                        placeholder="Ваш номер телефона">
+                                                </div>
+                                                <div class="modal-conteiner-inner__inner">
+                                                    <input type="email" placeholder="Ваша электронная почта"
+                                                        class="modal__input">
+                                                    <textarea placeholder="Ваш вопрос"
+                                                        class="modal__input modal__input--question"></textarea>
+                                                </div>
+                                                <button type="submit" class="modal__sabmit text-w16">оставить
+                                                    заявку</button>
+                                            </form>
+                                            <p class="modal-text__mini text-w16">Нажимая на кнопку, Вы соглашаетесь
+                                                с условиями Политики конфиденциальности</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <img src="./assets/imges/CmC-icon.svg" alt="Cmc icon" class="conect-with-us-conteiner__img">
                     </div>
@@ -451,7 +650,7 @@
                             <a href="" class="footer__link text-w16">Pgytech</a>
                             <a href="" class="footer__link text-w16">Zhiyun</a>
                             <a href="" class="footer__link text-w16">Флэш накопители<span>
-                                и карты памяти</span></a>
+                                    и карты памяти</span></a>
                             <a href="" class="footer__link text-w16">Кофемашины</a>
                             <div class="link__conteiner--inner">
                                 <a href="" class="footer__link">HDD,</a>
@@ -472,7 +671,7 @@
                     <h3 class="footer__title">свяжитесь с нами</h3>
                     <a href="" class="footer__link text-w16">+7 (985) 200 77 20</a>
                     <a href="" class="footer__link text-w16">zvonipishi79852007720@yandex.ru</a>
-                    <a href="" class="footer__link text-w16">г. Москва, улица Барклая, 13с1</a>
+                    <a href="" class="footer__link text-w16">г. Москва, улица Барклая, 13c1</a>
                     <a href="" class="footer__link text-w16">VK</a>
                     <a href="" class="footer__link text-w16">Telegram</a>
                     <a href="" class="call__back">Обратный звонок</a>
@@ -480,8 +679,8 @@
             </div>
         </div>
     </footer>
-    <script defer src="./node_modules/swiper/swiper-bundle.min.js"></script>
-    <script defer src="./assets/js/main.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
 </body>
 
 </html>
