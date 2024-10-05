@@ -18,7 +18,8 @@
             <a href="#" class="logo">
                 <img src="./assets/imges/logo.svg" alt="logo" class="logo__iner">
             </a>
-            <nav class="nav nav__header ">
+            
+            <nav class="nav nav__header menu">
                 <ul class="nav__list text-w16">
                     <li id="open-catalog-modal-btn" class=" nav__item active nav__item--catalog nav__item--no-search">
                         <button class="nav__item--link">каталог</button>
@@ -147,9 +148,9 @@
                     </nav>
                 </div>
             </div>
-            <nav class="nav nav__header ">
+            <nav class="nav nav__header">
                 <ul class="nav__list ">
-                    <li class="nav__item "><input type="search" id="search-input" class="nav__serch text-w16"
+                    <li class="nav__item nav__item--search"><input type="search" id="search-input" class="nav__serch text-w16"
                             placeholder="Поиск техники">
                         <svg class="input__icon" id="search" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +197,7 @@
                             </svg>
                         </a>
                     </li>
-                    <button id="open-modal-btn" class="phoneNumber__btn text-w20">+7 (985) 200 77 20</button>
+                    <button id="open-modal-btn" class="phoneNumber__btn text-w20"><img src="./assets/imges/call-icon.svg" alt="кнопка звонка"></button>
                 </ul>                    
                 <div class="modal" id="my-modal">
                     <div class="modal__box first__modal">
@@ -218,9 +219,12 @@
                     </div>
                 </div>
             </nav>
+            <button class="burger-button" aria-label="Меню">
+                <span class="burger-icon"></span>
+            </button>
         </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
         <section style="margin: 0;">
             <div class="conteiner">
                 <div class="swiper firstSwiper">
@@ -678,7 +682,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./assets/js/main.js"></script>
 </body>
