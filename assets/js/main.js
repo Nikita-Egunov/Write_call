@@ -57,9 +57,9 @@ var fourthSwiper = new Swiper(".fourtSwiper", {
 });
 
 
-// setupModal('my-modal', 'open-modal-btn', 'close-my-modal-btn');
+setupModal('my-modal', 'open-modal-btn', 'close-my-modal-btn');
 
-// setupModal('second-modal', 'open-second-modal-btn', 'close-second-modal-btn');
+setupModal('second-modal', 'open-second-modal-btn', 'close-second-modal-btn');
 
 
 function catalogToggle(id) {
