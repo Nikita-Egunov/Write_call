@@ -18,140 +18,246 @@
             <a href="#" class="logo">
                 <img src="./assets/imges/logo.svg" alt="logo" class="logo__iner">
             </a>
-            
+
             <nav class="nav nav__header menu">
                 <ul class="nav__list text-w16">
-                    <li id="open-catalog-modal-btn" class=" nav__item active nav__item--catalog nav__item--no-search">
-                        <button class="nav__item--link">каталог</button>
-                    </li>
-                    <li class="nav__item nav__item--no-search "><a href="#" class="nav__item--link">Акции</a></li>
-                    <li class="nav__item nav__item--no-search "><a href="#" class="nav__item--link">О магазине</a></li>
-                    <li class="nav__item nav__item--no-search "><a href="#" class="nav__item--link">оплата и доставка</a>
-                    </li>
-                    <li class="nav__item nav__item--no-search"><a href="#" class="nav__item--link">Контакты</a></li>
-                </ul>
-            </nav>
-            <div id="catalog-modal" class="catalog-modal__conteiner">
-                <button id="close-catalog-btn" class="cross-btn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="charm" class="charm" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path d="M22 2L2 22M2 2L22 22" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
-                </button>
-                <div class="conteiner__inner conteiner__inner--modal-catalog">
-                    <nav class="nav__conteiner">
-                        <ul class="catalog__list text-w20">
-                            <li class="catalog__item"  id="links-open-btn-1"><button
-                                    class="catalog__btn">Apple <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
-                                    </svg></button></li>
-                            <li class="catalog__item" id="links-open-btn-2"  ><button 
-                                    class="catalog__btn">Insta360 <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
-                                    </svg></button></li>
-                            <li class="catalog__item"  id="links-open-btn-3" ><button
-                                    class="catalog__btn">GoPro <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
-                                    </svg></button></li>
-                            <li class="catalog__item"  id="links-open-btn-4" ><button
-                                    class="catalog__btn">DJI <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
-                                    </svg></button></li>
-                            <li class="catalog__item" id="links-open-btn-5" ><button 
-                                    class="catalog__btn">Dyson <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
-                                    </svg></button></li>
-                            <li class="catalog__item" id="links-open-btn-6" ><button 
-                                    class="catalog__btn">Garmin <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
-                                    </svg></button></li>
-                            <li class="catalog__item" id="links-open-btn-7"><button 
-                                    class="catalog__btn">Pgytech <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
-                                    </svg></button></li>
-                            <li class="catalog__item" id="links-open-btn-8" ><button 
-                                    class="catalog__btn">Флэшнакопители
-                                     и карты памяти <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
-                                    </svg></button></li>
-                            <li class="catalog__item" id="links-open-btn-9" ><button 
-                                    class="catalog__btn">Кофемашины <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
-                                    </svg></button></li>
-                            <li class="catalog__item"  id="links-open-btn-10" ><button
-                                    class="catalog__btn">HDD, SSD, M2 <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2" stroke-linecap="round"/>
-                                    </svg></button></li>
-                        </ul>
-                    </nav>
-                    <nav class="nav__conteiner nav__conteiner--second text-w16">
-                        <ul id="catalog__list-1" class="catalog__list catalog__list--links">
-                            <li class="catalog__item catalog__item--links">Фен-стайлер1</li>
-                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
-                            <li class="catalog__item catalog__item--links">Пылесосы</li>
-                            <li class="catalog__item catalog__item--links">Аксессуары</li>
-                        </ul>
-                        <ul id="catalog__list-2" class="catalog__list catalog__list--links">
-                            <li class="catalog__item catalog__item--links">Фен-стайлер2</li>
-                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
-                            <li class="catalog__item catalog__item--links">Пылесосы</li>
-                            <li class="catalog__item catalog__item--links">Аксессуары</li>
-                        </ul>
-                        <ul id="catalog__list-3" class="catalog__list catalog__list--links">
-                            <li class="catalog__item catalog__item--links">Фен-стайлер3</li>
-                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
-                            <li class="catalog__item catalog__item--links">Пылесосы</li>
-                            <li class="catalog__item catalog__item--links">Аксессуары</li>
-                        </ul>
-                        <ul id="catalog__list-4" class="catalog__list catalog__list--links">
-                            <li class="catalog__item catalog__item--links">Фен-стайлер4</li>
-                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
-                            <li class="catalog__item catalog__item--links">Пылесосы</li>
-                            <li class="catalog__item catalog__item--links">Аксессуары</li>
-                        </ul>
-                        <ul id="catalog__list-5" class="catalog__list catalog__list--links">
-                            <li class="catalog__item catalog__item--links">Фен-стайлер</li>
-                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
-                            <li class="catalog__item catalog__item--links">Пылесосы</li>
-                            <li class="catalog__item catalog__item--links">Аксессуары</li>
-                        </ul>
-                        <ul id="catalog__list-6" class="catalog__list catalog__list--links">
-                            <li class="catalog__item catalog__item--links">Фен-стайлер6</li>
-                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
-                            <li class="catalog__item catalog__item--links">Пылесосы</li>
-                            <li class="catalog__item catalog__item--links">Аксессуары</li>
-                        </ul>
-                        <ul id="catalog__list-7" class="catalog__list catalog__list--links">
-                            <li class="catalog__item catalog__item--links">Фен-стайлер7</li>
-                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
-                            <li class="catalog__item catalog__item--links">Пылесосы</li>
-                            <li class="catalog__item catalog__item--links">Аксессуары</li>
-                        </ul>
-                        <ul id="catalog__list-8" class="catalog__list catalog__list--links">
-                            <li class="catalog__item catalog__item--links">Фен-стайлер8</li>
-                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
-                            <li class="catalog__item catalog__item--links">Пылесосы</li>
-                            <li class="catalog__item catalog__item--links">Аксессуары</li>
-                        </ul>
-                        <ul id="catalog__list-9" class="catalog__list catalog__list--links">
-                            <li class="catalog__item catalog__item--links">Фен-стайлер9</li>
-                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
-                            <li class="catalog__item catalog__item--links">Пылесосы</li>
-                            <li class="catalog__item catalog__item--links">Аксессуары</li>
-                        </ul>
-                        <ul id="catalog__list-10" class="catalog__list catalog__list--links">
-                            <li class="catalog__item catalog__item--links">Фен-стайлер10</li>
-                            <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
-                            <li class="catalog__item catalog__item--links">Пылесосы</li>
-                            <li class="catalog__item catalog__item--links">Аксессуары</li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+                    <li id="open-catalog-modal-btn" class=" nav__item active nav__item--catalog nav__item--no-search">
+                        <button class="nav__item--link">каталог</button>
+                    </li>
+                    <div id="catalog-modal" class="catalog-modal__conteiner">
+                        <button id="close-catalog-btn" class="cross-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 2L2 22M2 2L22 22" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="conteiner__inner conteiner__inner--modal-catalog">
+                            <nav class="nav__conteiner">
+                                <ul class="catalog__list text-w20">
+                                    <li class="catalog__item" id="links-open-btn-1"><button class="catalog__btn">Apple
+                                            <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg></button></li>
+                                    <ul id="catalog__list-1" class="catalog__list catalog__list--links">
+                                        <li class="catalog__item catalog__item--links">Фен-стайлер1</li>
+                                        <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                        <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                        <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                    </ul>
+                                    <li class="catalog__item" id="links-open-btn-2"><button
+                                            class="catalog__btn">Insta360 <svg class="catalog__icon" width="9"
+                                                height="15" viewBox="0 0 9 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg></button></li>
+                                    <ul id="catalog__list-2" class="catalog__list catalog__list--links">
+                                        <li class="catalog__item catalog__item--links">Фен-стайлер2</li>
+                                        <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                        <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                        <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                    </ul>
+                                    <li class="catalog__item" id="links-open-btn-3"><button class="catalog__btn">GoPro
+                                            <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg></button></li>
+                                    <ul id="catalog__list-3" class="catalog__list catalog__list--links">
+                                        <li class="catalog__item catalog__item--links">Фен-стайлер1</li>
+                                        <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                        <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                        <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                    </ul>
+                                    <li class="catalog__item" id="links-open-btn-4"><button class="catalog__btn">DJI
+                                            <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg></button></li>
+                                    <ul id="catalog__list-4" class="catalog__list catalog__list--links">
+                                        <li class="catalog__item catalog__item--links">Фен-стайлер4</li>
+                                        <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                        <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                        <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                    </ul>
+                                    <li class="catalog__item" id="links-open-btn-5"><button class="catalog__btn">Dyson
+                                            <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg></button></li>
+                                    <ul id="catalog__list-5" class="catalog__list catalog__list--links">
+                                        <li class="catalog__item catalog__item--links">Фен-стайлер4</li>
+                                        <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                        <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                        <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                    </ul>
+                                    <li class="catalog__item" id="links-open-btn-6"><button class="catalog__btn">Garmin
+                                            <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg></button></li>
+                                    <ul id="catalog__list-6" class="catalog__list catalog__list--links">
+                                        <li class="catalog__item catalog__item--links">Фен-стайлер4</li>
+                                        <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                        <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                        <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                    </ul>
+                                    <li class="catalog__item" id="links-open-btn-7"><button class="catalog__btn">Pgytech
+                                            <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg></button></li>
+                                    <ul id="catalog__list-7" class="catalog__list catalog__list--links">
+                                        <li class="catalog__item catalog__item--links">Фен-стайлер4</li>
+                                        <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                        <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                        <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                    </ul>
+                                    <li class="catalog__item" id="links-open-btn-8"><button
+                                            class="catalog__btn">Флэшнакопители
+                                            и карты памяти <svg class="catalog__icon" width="9" height="15"
+                                                viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg></button></li>
+                                    <ul id="catalog__list-8" class="catalog__list catalog__list--links">
+                                        <li class="catalog__item catalog__item--links">Фен-стайлер4</li>
+                                        <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                        <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                        <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                    </ul>
+                                    <li class="catalog__item" id="links-open-btn-9"><button
+                                            class="catalog__btn">Кофемашины <svg class="catalog__icon" width="9"
+                                                height="15" viewBox="0 0 9 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg></button></li>
+                                    <ul id="catalog__list-9" class="catalog__list catalog__list--links">
+                                        <li class="catalog__item catalog__item--links">Фен-стайлер4</li>
+                                        <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                        <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                        <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                    </ul>
+                                    <li class="catalog__item" id="links-open-btn-10"><button class="catalog__btn">HDD,
+                                            SSD, M2 <svg class="catalog__icon" width="9" height="15" viewBox="0 0 9 15"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L7 7.5L1 13.5" stroke="#1B1B1B" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg></button></li>
+                                    <ul id="catalog__list-10" class="catalog__list catalog__list--links">
+                                        <li class="catalog__item catalog__item--links">Фен-стайлер4</li>
+                                        <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                        <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                        <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                    </ul>
+                                </ul>
+                            </nav>
+                            <nav class="nav__conteiner nav__conteiner--second text-w16">
+                                <ul id="catalog__list-1--full" class="catalog__list catalog__list--links">
+                                    <li class="catalog__item catalog__item--links">Фен-стайлер1</li>
+                                    <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                    <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                    <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                </ul>
+                                <ul id="catalog__list-2--full" class="catalog__list catalog__list--links">
+                                    <li class="catalog__item catalog__item--links">Фен-стайлер2</li>
+                                    <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                    <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                    <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                </ul>
+                                <ul id="catalog__list-3--full" class="catalog__list catalog__list--links">
+                                    <li class="catalog__item catalog__item--links">Фен-стайлер3</li>
+                                    <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                    <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                    <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                </ul>
+                                <ul id="catalog__list-4--full" class="catalog__list catalog__list--links">
+                                    <li class="catalog__item catalog__item--links">Фен-стайлер4</li>
+                                    <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                    <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                    <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                </ul>
+                                <ul id="catalog__list-5--full" class="catalog__list catalog__list--links">
+                                    <li class="catalog__item catalog__item--links">Фен-стайлер</li>
+                                    <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                    <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                    <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                </ul>
+                                <ul id="catalog__list-6--full" class="catalog__list catalog__list--links">
+                                    <li class="catalog__item catalog__item--links">Фен-стайлер6</li>
+                                    <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                    <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                    <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                </ul>
+                                <ul id="catalog__list-7--full" class="catalog__list catalog__list--links">
+                                    <li class="catalog__item catalog__item--links">Фен-стайлер7</li>
+                                    <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                    <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                    <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                </ul>
+                                <ul id="catalog__list-8--full" class="catalog__list catalog__list--links">
+                                    <li class="catalog__item catalog__item--links">Фен-стайлер8</li>
+                                    <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                    <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                    <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                </ul>
+                                <ul id="catalog__list-9--full" class="catalog__list catalog__list--links">
+                                    <li class="catalog__item catalog__item--links">Фен-стайлер9</li>
+                                    <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                    <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                    <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                </ul>
+                                <ul id="catalog__list-10--full" class="catalog__list catalog__list--links">
+                                    <li class="catalog__item catalog__item--links">Фен-стайлер10</li>
+                                    <li class="catalog__item catalog__item--links">Наушники c очисткой воздуха</li>
+                                    <li class="catalog__item catalog__item--links">Пылесосы</li>
+                                    <li class="catalog__item catalog__item--links">Аксессуары</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <li class="nav__item nav__item--no-search "><a href="#" class="nav__item--link">Акции</a></li>
+                    <li class="nav__item nav__item--no-search "><a href="#" class="nav__item--link">О магазине</a></li>
+                    <li class="nav__item nav__item--no-search "><a href="#" class="nav__item--link">оплата и
+                            доставка</a>
+                    </li>
+                    <li class="nav__item nav__item--no-search"><a href="#" class="nav__item--link">Контакты</a></li>
+                    <li class="nav__item nav__item--burger-search"><input type="search" id="search-input"
+                            class="nav__serch text-w16" placeholder="Поиск техники">
+                        <svg class="input__icon" id="search" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4_1481)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.5 2C9.1446 2.00012 7.80887 2.32436 6.60427 2.94569C5.39966 3.56702 4.3611 4.46742 3.57525 5.57175C2.78939 6.67609 2.27902 7.95235 2.08672 9.29404C1.89442 10.6357 2.02576 12.004 2.46979 13.2846C2.91382 14.5652 3.65766 15.7211 4.63925 16.6557C5.62084 17.5904 6.81171 18.2768 8.11252 18.6576C9.41333 19.0384 10.7864 19.1026 12.117 18.8449C13.4477 18.5872 14.6975 18.015 15.762 17.176L19.414 20.828C19.6026 21.0102 19.8552 21.111 20.1174 21.1087C20.3796 21.1064 20.6304 21.0012 20.8158 20.8158C21.0012 20.6304 21.1064 20.3796 21.1087 20.1174C21.111 19.8552 21.0102 19.6026 20.828 19.414L17.176 15.762C18.164 14.5086 18.7792 13.0024 18.9511 11.4157C19.123 9.82905 18.8448 8.22602 18.1482 6.79009C17.4517 5.35417 16.3649 4.14336 15.0123 3.29623C13.6597 2.44911 12.096 1.99989 10.5 2ZM4.00001 10.5C4.00001 8.77609 4.68483 7.12279 5.90382 5.90381C7.1228 4.68482 8.7761 4 10.5 4C12.2239 4 13.8772 4.68482 15.0962 5.90381C16.3152 7.12279 17 8.77609 17 10.5C17 12.2239 16.3152 13.8772 15.0962 15.0962C13.8772 16.3152 12.2239 17 10.5 17C8.7761 17 7.1228 16.3152 5.90382 15.0962C4.68483 13.8772 4.00001 12.2239 4.00001 10.5Z"
+                                    fill="#374D7B" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4_1481">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+
             <nav class="nav nav__header">
                 <ul class="nav__list ">
-                    <li class="nav__item nav__item--search"><input type="search" id="search-input" class="nav__serch text-w16"
-                            placeholder="Поиск техники">
+                    <li class="nav__item nav__item--search"><input type="search" id="search-input"
+                            class="nav__serch text-w16" placeholder="Поиск техники">
                         <svg class="input__icon" id="search" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4_1481)">
@@ -197,8 +303,9 @@
                             </svg>
                         </a>
                     </li>
-                    <button id="open-modal-btn" class="phoneNumber__btn text-w20"><img src="./assets/imges/call-icon.svg" alt="кнопка звонка"></button>
-                </ul>                    
+                    <button id="open-modal-btn" class="phoneNumber__btn text-w20"><img
+                            src="./assets/imges/call-icon.svg" alt="кнопка звонка"></button>
+                </ul>
                 <div class="modal" id="my-modal">
                     <div class="modal__box first__modal">
                         <button class="modal__close-btn modal-close-btn__first" id="close-my-modal-btn"></button>
@@ -218,13 +325,14 @@
                         </div>
                     </div>
                 </div>
+
             </nav>
-            <button class="burger-button" aria-label="Меню">
+            <button id="burger-button" class="burger-button" aria-label="Меню">
                 <span class="burger-icon"></span>
             </button>
         </div>
     </header>
-    <!-- <main class="main">
+    <main class="main">
         <section style="margin: 0;">
             <div class="conteiner">
                 <div class="swiper firstSwiper">
@@ -331,11 +439,17 @@
         <section>
             <div class="conteiner benefits">
                 <div class="conteiner__inner--benefits conteiner-inner__benefits--second">
-                    <h2 class="title-w60 benefits__title"><span class="device__shop device__shop--block title-w50">Для
-                            любой
-                            техники apple</span> <span class="Call__write Call__write--second">расширенная гарантия<br>
-                            в подарок <img src="./assets/imges/apple-garantie__img.svg" alt="apple garantie img"
-                                class="apple-garantie__img"></span></h2>
+                    <h2 class="title-w60 benefits__title">
+                        <p>
+                            <span class="device__shop device__shop--block title-w50">Для
+                                любой
+                                техники apple</span> <span class="Call__write Call__write--second">расширенная гарантия
+                                в подарок
+                                <img src="./assets/imges/apple-garantie__img.svg" alt="apple garantie img"
+                                    class="apple-garantie__img">
+                            </span>
+                    </h2>
+                    </p>
                     <a href="#" class="text-w16 link link--white">подробнее</a>
                 </div>
                 <img src="./assets/imges/iphones.svg" alt="the products of some brands"
@@ -345,89 +459,104 @@
         <section>
             <div class="conteiner">
                 <h2 class="title title-w60">Бестселлеры</h2>
-                <div class="conteiner__inner conteiner__inner--cards">
-                    <div class="card">
-                        <div class="card__img--conteiner">
-                            <img src="./assets/imges/apple_watch3.svg" alt="apple watch"
-                                class="card__img card__img--appleWatch">
-                        </div>
-                        <div class="card__conteiner">
-                            <div class="card__conteiner--inner">
-                                <p class="card__title text-w20">Apple Watch Sereis 9 45<br>
-                                    Milano Graphite</p>
-                                <p class="card__article text-w16">Артикул 02484</p>
+                <div class="conteiner__inner conteiner__inner--cards swiper thirdSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__img--conteiner">
+                                    <img src="./assets/imges/apple_watch3.svg" alt="apple watch"
+                                        class="card__img card__img--appleWatch">
+                                </div>
+                                <div class="card__conteiner">
+                                    <div class="card__conteiner--inner">
+                                        <p class="card__title text-w20">Apple Watch Sereis 9 45<br>
+                                            Milano Graphite</p>
+                                        <p class="card__article text-w16">Артикул 02484</p>
+                                    </div>
+                                    <div class="card__conteiner-inner--second">
+                                        <p class="card__price text-w20">90 990 ₽</p>
+                                        <a href="#" class="cart__btn"></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card__conteiner-inner--second">
-                                <p class="card__price text-w20">90 990 ₽</p>
-                                <a href="#" class="cart__btn"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__img--conteiner">
+                                    <img src="./assets/imges/steam-deck.svg" alt="steam deck"
+                                        class="card__img card__img--steam-deck">
+                                </div>
+                                <div class="card__conteiner">
+                                    <div class="card__conteiner--inner">
+                                        <p class="card__title text-w20">VALVE Steam Deck Oled 512</p>
+                                        <p class="card__article text-w16">Артикул 02541</p>
+                                    </div>
+                                    <div class="card__conteiner-inner--second">
+                                        <p class="card__price text-w20"><span>25 990 ₽</span> 20 990 ₽</p>
+                                        <a href="#" class="cart__btn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__img--conteiner">
+                                    <img src="./assets/imges/goPro_cam2.svg" alt="goPro cam" class="card__img">
+                                </div>
+                                <div class="card__conteiner">
+                                    <div class="card__conteiner--inner">
+                                        <p class="card__title text-w20">GoPro HERO12 Black</p>
+                                        <p class="card__article text-w16">Артикул 02512</p>
+                                    </div>
+                                    <div class="card__conteiner-inner--second">
+                                        <p class="card__price text-w20">50 990 ₽</p>
+                                        <a href="#" class="cart__btn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__img--conteiner">
+                                    <img src="./assets/imges/dyson.svg" alt="dyson" class="card__img">
+                                </div>
+                                <div class="card__conteiner">
+                                    <div class="card__conteiner--inner">
+                                        <p class="card__title text-w20">Dyson Cinetic Big Ball Absolute 2</p>
+                                        <p class="card__article text-w16">Артикул 02289</p>
+                                    </div>
+                                    <div class="card__conteiner-inner--second">
+                                        <p class="card__price text-w20"><span>25 990 ₽</span>20 990 ₽</p>
+                                        <a href="#" class="cart__btn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__img--conteiner">
+                                    <img src="./assets/imges/goPro_battarey.svg" alt="goPro battarey" class="card__img">
+                                </div>
+                                <div class="card__conteiner">
+                                    <div class="card__conteiner--inner">
+                                        <p class="card__title text-w20">Аккумулятор GoPro 11/10/9 Dual Enduro
+                                            Battery<br>
+                                            Milano Graphite</p>
+                                        <p class="card__article text-w16">Артикул 02527</p>
+                                    </div>
+                                    <div class="card__conteiner-inner--second">
+                                        <p class="card__price text-w20">8 790 ₽</p>
+                                        <a href="#" class="cart__btn"></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card__img--conteiner">
-                            <img src="./assets/imges/steam-deck.svg" alt="steam deck"
-                                class="card__img card__img--steam-deck">
-                        </div>
-                        <div class="card__conteiner">
-                            <div class="card__conteiner--inner">
-                                <p class="card__title text-w20">VALVE Steam Deck Oled 512</p>
-                                <p class="card__article text-w16">Артикул 02541</p>
-                            </div>
-                            <div class="card__conteiner-inner--second">
-                                <p class="card__price text-w20"><span>25 990 ₽</span> 20 990 ₽</p>
-                                <a href="#" class="cart__btn"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__img--conteiner">
-                            <img src="./assets/imges/goPro_cam2.svg" alt="goPro cam" class="card__img">
-                        </div>
-                        <div class="card__conteiner">
-                            <div class="card__conteiner--inner">
-                                <p class="card__title text-w20">GoPro HERO12 Black</p>
-                                <p class="card__article text-w16">Артикул 02512</p>
-                            </div>
-                            <div class="card__conteiner-inner--second">
-                                <p class="card__price text-w20">50 990 ₽</p>
-                                <a href="#" class="cart__btn"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__img--conteiner">
-                            <img src="./assets/imges/dyson.svg" alt="dyson" class="card__img">
-                        </div>
-                        <div class="card__conteiner">
-                            <div class="card__conteiner--inner">
-                                <p class="card__title text-w20">Dyson Cinetic Big Ball Absolute 2</p>
-                                <p class="card__article text-w16">Артикул 02289</p>
-                            </div>
-                            <div class="card__conteiner-inner--second">
-                                <p class="card__price text-w20"><span>25 990 ₽</span>20 990 ₽</p>
-                                <a href="#" class="cart__btn"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__img--conteiner">
-                            <img src="./assets/imges/goPro_battarey.svg" alt="goPro battarey" class="card__img">
-                        </div>
-                        <div class="card__conteiner">
-                            <div class="card__conteiner--inner">
-                                <p class="card__title text-w20">Аккумулятор GoPro 11/10/9 Dual Enduro Battery<br>
-                                    Milano Graphite</p>
-                                <p class="card__article text-w16">Артикул 02527</p>
-                            </div>
-                            <div class="card__conteiner-inner--second">
-                                <p class="card__price text-w20">8 790 ₽</p>
-                                <a href="#" class="cart__btn"></a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-pagination swiper-pagination-third"></div>
                 </div>
             </div>
         </section>
+
         <section>
             <div class="conteiner benefits benefits--to-left">
                 <div class="conteiner__inner--benefits conteiner-inner__benefits--second">
@@ -440,10 +569,11 @@
                 <img src="./assets/imges/present.svg" alt="present" class="benefits__img benefits__img--second">
             </div>
         </section>
+
         <section>
             <div class="conteiner">
                 <h2 class="title title-w60">Ваше мнение о нас</h2>
-                <div class="swiper thirdSwiper">
+                <div class="swiper fourtSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide feedback__conteiner">
                             <div class="feedback__conteiner--inner">
@@ -549,6 +679,7 @@
                 </div>
             </div>
         </section>
+
         <section>
             <div class="conteiner">
                 <div class="conteiner__inner conteiner__inner--about">
@@ -626,6 +757,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="conteiner">
             <div class="conteiner__inner conteiner__inner--footer">
@@ -682,9 +814,8 @@
                 </div>
             </div>
         </div>
-    </footer> -->
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-    <script type="module" src="./assets/js/main.js"></script>
+    </footer>
+        <script type="module" src="./assets/js/main.js"></script>
 </body>
 
 </html>
